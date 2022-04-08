@@ -1,3 +1,13 @@
+:root{
+  --primary-color: #b91450;
+  --btn-background: lightgrey;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 /*rimuovere le frecce in input number*/
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -8,4 +18,125 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+body{
+  background-color: var(--primary-color);
+}
+
+.centered{
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mt-1{
+  margin-top: 1rem;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+h2{
+  color: white;
+}
+/*TOP*/
+.top{
+  text-align: center;
+}
+
+.container{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/*form*/
+.form-container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-item{
+  margin: 0 1rem;
+}
+
+.form-item > *{
+  display: block;
+}
+
+.form-item label{
+  color: var(--primary-color);
+}
+
+.form-item input,
+.form-item select{
+  margin: 0 auto;
+  padding: 3px 2px;
+  text-align: center;
+  margin-top: .5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.form-item input:focus-visible{
+  outline: none;
+}
+
+/*bottoni*/
+.btn-container{
+  margin-top: 2rem;
+}
+
+.btn-container button{
+  padding: 2px 4px;
+  margin: 0 .5rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: var(--btn-background);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.btn-container button:active{
+  border-color: orange;
+}
+
+/*TICKET*/
+.wrapper h2{
+  text-align: center;
+}
+
+.d-none{
+  display: none;
+}
+
+.ticket-wrapper{
+  background-color: white;
+  padding: 1rem;
+}
+
+.ticket{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: flex;
+  width: 100%;
+}
+
+.ticket-item{
+  padding: .8rem;
+  height: 100px;
+  flex-grow: 1;
+  font-size: .8rem;
+}
+
+.ticket-item:not(.ticket-name){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ticket-name{
+  background-color: grey;
 }
