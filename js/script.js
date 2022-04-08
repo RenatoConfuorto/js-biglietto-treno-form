@@ -63,3 +63,14 @@ generateBtn.addEventListener('click', function(){
   //mostrare il biglietto
   ticket.classList.remove('d-none');
 });
+
+//tasto per ripulire la form
+clearBtn.addEventListener('click', function(){
+  //nascondere il biglietto
+  ticket.classList.add('d-none');
+
+  //ripulire le form
+  userNameInput.value = '';
+  distanceInput.value = '';
+  userAgeInput.value = 'adult';
+});
